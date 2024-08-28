@@ -1,0 +1,278 @@
+.header
+{
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(222, 222, 222);
+    border-bottom-width: 1px;
+    z-index: 100;
+    margin-bottom: 20px;
+}
+
+.menu
+{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.youtube
+{
+    height: 20px;
+}
+
+.left-section
+{
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 162px;
+    height: 32px;
+}
+
+.middle-section
+{
+    flex: 1;
+    margin-left:60px;
+    max-width: 470px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.Search-icon
+{
+    height: 40px;
+    margin-right:8px;
+    width: 64px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    margin-left: -1px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 2px;
+}
+.mic-icon
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border:none;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section
+{
+    width:182px;
+    height: 32px;
+    margin-left: 29px;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.search
+{
+    height: 36px;
+    border-color: lightgray;
+    border-width: 1px;
+    padding-left: 12px;
+    border-radius: 2px;
+    border-style: solid;
+    flex: 1;
+    font-size: 16px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+
+.search::placeholder
+{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+.search-icon1
+{
+    height: 24px;
+}
+
+.mic-icon-1
+{
+    height: 24px;
+}
+
+.notifications-icon-container
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notifications-count
+{
+    position: absolute;
+    top: -3px;
+    right: -7px;
+    background-color: #cc0000;
+    color: white;
+    border-radius: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    font-size: 10px;
+    font-family: Roboto, Arial;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.upload,.cube,.notifications
+{
+    height: 24px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.channel-pic
+{
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    object-position: top;
+    vertical-align: middle;
+    margin: 0px;
+    border-radius: 50%;
+}
+
+.hover
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover .Search
+{
+    position: absolute;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 2px;
+    bottom: -50px;
+    background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    transition: opacity 0.15s;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hover:hover .Search
+{
+    opacity: 1;
+}
+
+.mic-icon .Voice
+{
+    position: absolute;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 2px;
+    bottom: -40px;
+    background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    transition: opacity 0.15s;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mic-icon:hover .Voice
+{
+    opacity: 1;
+}
+
+.hover .create
+{
+    position: absolute;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 2px;
+    bottom: -47px;
+    background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    transition: opacity 0.15s;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hover:hover .create
+{
+    opacity: 1;
+}
+
+.hover .apps
+{
+    background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -47px;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+.hover:hover .apps
+{
+    opacity: 1;
+}
+
+.notifications-icon-container .noti
+{
+    background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -47px;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+.notifications-icon-container:hover .noti
+{
+    opacity: 1;
+}
